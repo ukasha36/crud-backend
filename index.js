@@ -26,3 +26,8 @@ app.use('/api/items', itemRoutes);
 // Start the server
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+app.get('/',(req,res)=>{
+    res.send('Crud api is running')
+})
